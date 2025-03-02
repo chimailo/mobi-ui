@@ -2,9 +2,7 @@
   "extends": "@mobi/typescript-config/react-library.json",
   "compilerOptions": {
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src"],
