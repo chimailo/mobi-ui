@@ -6,6 +6,7 @@
     "react",
     "react-aria-components",
     "tailwind",
+    "design system",
     "ui"
   ],
   "homepage": "https://github.com/chimailo/mobi-ui",
