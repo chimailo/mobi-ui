@@ -11,6 +11,7 @@
     "ci": "pnpm prepare && pnpm check-types && pnpm build"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "prettier": "^3.5.0",
     "turbo": "^2.4.4",
     "typescript": "5.7.3"
