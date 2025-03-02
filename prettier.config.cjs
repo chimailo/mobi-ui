@@ -1,7 +1,7 @@
 /** @type {import('prettier').Config} */
 module.exports = {
   endOfLine: "lf",
-  semi: false,
+  semi: true,
   singleQuote: false,
   tabWidth: 2,
   trailingComma: "es5",
@@ -26,11 +26,6 @@ module.exports = {
     "",
     "^[./]",
   ],
-  importOrderSeparation: false,
-  importOrderSortSpecifiers: true,
-  importOrderBuiltinModulesToTop: true,
   importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
-  importOrderMergeDuplicateImports: true,
-  importOrderCombineTypeAndValueImports: true,
   plugins: ["@ianvs/prettier-plugin-sort-imports"],
 }

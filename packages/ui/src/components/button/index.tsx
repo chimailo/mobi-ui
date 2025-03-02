@@ -5,6 +5,7 @@ import {
   type ButtonProps as RACButtonProps,
 } from "react-aria-components";
 import { tv } from "tailwind-variants";
+
 import { focusRing } from "@/lib/utils";
 
 export interface ButtonProps extends RACButtonProps {
@@ -36,7 +37,7 @@ export function Button(props: ButtonProps) {
     <RACButton
       {...props}
       className={composeRenderProps(props.className, (className, renderProps) =>
-        button({ ...renderProps, variant: props.variant, className }),
+        button({ ...renderProps, variant: props.variant, className })
       )}
     />
   );

@@ -1,10 +1,11 @@
 import React from "react";
 import {
+  composeRenderProps,
   ToggleButton as RACToggleButton,
   type ToggleButtonProps,
-  composeRenderProps,
 } from "react-aria-components";
 import { tv } from "tailwind-variants";
+
 import { focusRing } from "@/lib/utils";
 
 const styles = tv({
@@ -27,7 +28,7 @@ export function ToggleButton(props: ToggleButtonProps) {
     <RACToggleButton
       {...props}
       className={composeRenderProps(props.className, (className, renderProps) =>
-        styles({ ...renderProps, className }),
+        styles({ ...renderProps, className })
       )}
     />
   );
