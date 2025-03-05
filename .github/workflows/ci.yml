@@ -1,4 +1,4 @@
-name: CI
+name: Code Check
 
 on:
   pull_request:
@@ -11,18 +11,30 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  ci:
+  lint:
+    name: Lint, format and check types
+    timeout-minutes: 15
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
+      - name: Cache turbo build setup // [!code highlight]
+        uses: actions/cache@v4 // [!code highlight]
+        with: 
+          path: .turbo // [!code highlight]
+          key: ${{ runner.os }}-turbo-${{ github.sha }} // [!code highlight]
+          restore-keys: |
+            ${{ runner.os }}-turbo- // [!code highlight]
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
         with:
           run_install: false
 
-      - name: Install Node.js
+      - name: Setup Node.js environment
         uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -31,5 +43,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run CI
-        run: npm run ci
+      - name: Run lint, format and type checks
+        run: pnpm code-check
