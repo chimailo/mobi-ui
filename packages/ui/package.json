@@ -1,62 +1,60 @@
 {
-  "name": "@mobi/ui",
-  "version": "0.0.0",
-  "description": "A Beautiful, fast and modern React UI library for building accessible and customizable web applications.",
-  "keywords": [
-    "react",
-    "react-aria-components",
-    "tailwind",
-    "design system",
-    "ui"
-  ],
-  "homepage": "https://github.com/chimailo/mobi-ui",
-  "bugs": {
-    "url": "https://github.com/chimailo/mobi-ui/issues"
-  },
-  "author": "Chima Ilo <collins.chima.ilo@gmail.com>",
-  "sideEffects": false,
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:chimailo/mobi-ui.git",
-    "directory": "packages/ui"
-  },
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
-  },
-  "scripts": {
-    "dev": "tsup --watch",
-    "build": "tsup",
-    "typecheck": "tsc --noEmit",
-    "check-exports": "attw --pack --profile esm-only .",
-    "generate:component": "turbo gen react-component"
-  },
-  "devDependencies": {
-    "@arethetypeswrong/cli": "^0.17.4",
-    "@mobi/typescript-config": "workspace:*",
-    "@tailwindcss/postcss": "^4.0.9",
-    "@turbo/gen": "^2.4.0",
-    "@types/node": "^22.13.0",
-    "@types/react": "19.0.8",
-    "@types/react-dom": "19.0.3",
-    "clsx": "^2.1.1",
-    "postcss": "^8.5.3",
-    "tailwind-merge": "^3.0.2",
-    "tailwind-variants": "^0.3.1",
-    "tailwindcss": "^4.0.9",
-    "tsup": "^8.4.0",
-    "typescript": "5.7.3"
-  },
-  "dependencies": {
-    "react": ">=19.0.0",
-    "react-aria-components": "^1.6.0",
-    "react-dom": ">=19.0.0"
-  }
+	"name": "@mobi/ui",
+	"version": "0.0.0",
+	"description": "A Beautiful, fast and modern React UI library for building accessible and customizable web applications.",
+	"keywords": [
+		"react",
+		"react-aria-components",
+		"tailwind",
+		"design system",
+		"ui"
+	],
+	"homepage": "https://github.com/chimailo/mobi-ui",
+	"bugs": {
+		"url": "https://github.com/chimailo/mobi-ui/issues"
+	},
+	"author": "Chima Ilo <collins.chima.ilo@gmail.com>",
+	"sideEffects": false,
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:chimailo/mobi-ui.git",
+		"directory": "packages/ui"
+	},
+	"license": "MIT",
+	"files": ["dist"],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		}
+	},
+	"scripts": {
+		"dev": "tsup --watch",
+		"build": "tsup",
+		"typecheck": "tsc --noEmit",
+		"check-exports": "attw --pack --profile esm-only .",
+		"generate:component": "turbo gen react-component"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.17.4",
+		"@mobi/typescript-config": "workspace:*",
+		"@tailwindcss/postcss": "^4.0.9",
+		"@turbo/gen": "^2.4.0",
+		"@types/node": "^22.13.0",
+		"@types/react": "19.0.8",
+		"@types/react-dom": "19.0.3",
+		"clsx": "^2.1.1",
+		"postcss": "^8.5.3",
+		"tailwind-merge": "^3.0.2",
+		"tailwind-variants": "^0.3.1",
+		"tailwindcss": "^4.0.9",
+		"tsup": "^8.4.0",
+		"typescript": "5.7.3"
+	},
+	"dependencies": {
+		"react": ">=19.0.0",
+		"react-aria-components": "^1.6.0",
+		"react-dom": ">=19.0.0"
+	}
 }
