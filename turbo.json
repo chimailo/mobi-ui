@@ -7,7 +7,12 @@
 			"inputs": ["$TURBO_DEFAULT$", ".env*"],
 			"outputs": [".next/**", "!.next/cache/**", "dist/**"]
 		},
-		"typecheck": {},
+		"docs#typecheck": {
+			"dependsOn": ["@mobi/ui#build"]
+		},
+		"web#typecheck": {
+			"dependsOn": ["@mobi/ui#build"]
+		},
 		"//#format-and-lint": {
 			"dependsOn": ["format-and-lint:fix"]
 		},
