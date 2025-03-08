@@ -51,6 +51,9 @@ importers:
       '@types/react-dom':
         specifier: 19.0.3
         version: 19.0.3(@types/react@19.0.8)
+      eslint:
+        specifier: ^9.21.0
+        version: 9.21.0(jiti@2.4.2)
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -112,6 +115,9 @@ importers:
       '@vitest/coverage-v8':
         specifier: ^3.0.7
         version: 3.0.7(@vitest/browser@3.0.7(@types/node@22.13.0)(playwright@1.50.1)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.0)(jiti@2.4.2)(lightningcss@1.29.1))(vitest@3.0.7))(vitest@3.0.7(@types/node@22.13.0)(@vitest/browser@3.0.7)(jiti@2.4.2)(lightningcss@1.29.1)(msw@2.7.3(@types/node@22.13.0)(typescript@5.8.2)))
+      eslint:
+        specifier: ^9.21.0
+        version: 9.21.0(jiti@2.4.2)
       globals:
         specifier: ^15.15.0
         version: 15.15.0
@@ -139,9 +145,6 @@ importers:
       '@next/eslint-plugin-next':
         specifier: ^15.2.1
         version: 15.2.1
-      eslint:
-        specifier: ^9.21.0
-        version: 9.21.0(jiti@2.4.2)
       eslint-config-prettier:
         specifier: ^10.0.2
         version: 10.1.1(eslint@9.21.0(jiti@2.4.2))
@@ -217,6 +220,9 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+      eslint:
+        specifier: ^9.21.0
+        version: 9.21.0(jiti@2.4.2)
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
