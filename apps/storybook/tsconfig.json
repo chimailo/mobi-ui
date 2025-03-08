@@ -1,0 +1,17 @@
+{
+  "extends": "@mobi/typescript-config/base.json",
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": [
+    "src"
+  ]
+}

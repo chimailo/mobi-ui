@@ -3,7 +3,9 @@
 	"private": true,
 	"scripts": {
 		"build": "turbo run build",
+		"build:ui": "turbo run build --filter=@mobi/ui",
 		"dev": "turbo run dev",
+		"dev:storybook": "turbo run dev --filter=storybook",
 		"typecheck": "turbo run typecheck",
 		"format-and-lint": "biome check .",
 		"format-and-lint:fix": "biome check . --write",

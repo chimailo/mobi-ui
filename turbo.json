@@ -4,7 +4,7 @@
 	"tasks": {
 		"build": {
 			"dependsOn": ["^build"],
-			"inputs": ["$TURBO_DEFAULT$", ".env*"],
+			"inputs": ["$TURBO_DEFAULT$", ".env*", "!**/*.stories.{tsx,jsx,mdx}"],
 			"outputs": [".next/**", "!.next/cache/**", "dist/**"]
 		},
 		"docs#typecheck": {
@@ -12,6 +12,9 @@
 		},
 		"web#typecheck": {
 			"dependsOn": ["@mobi/ui#build"]
+		},
+		"test": {
+			"inputs": ["$TURBO_DEFAULT$", ".env*", "!**/*.stories.{tsx,jsx,mdx}"]
 		},
 		"//#format-and-lint": {
 			"dependsOn": ["format-and-lint:fix"]
