@@ -21,9 +21,7 @@
 		"directory": "packages/ui"
 	},
 	"license": "MIT",
-	"files": [
-		"dist"
-	],
+	"files": ["dist"],
 	"type": "module",
 	"exports": {
 		".": {
@@ -34,12 +32,16 @@
 	"scripts": {
 		"dev": "tsup --watch",
 		"build": "tsup",
+		"lint": "eslint . --max-warnings 0",
+		"lint:fix": "eslint . --fix",
 		"typecheck": "tsc --noEmit",
-		"check-exports": "attw --pack --profile esm-only .",
+		"check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+		"clean": "rm -rf .turbo node_modules dist",
 		"generate:component": "turbo gen react-component"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.17.4",
+		"@mobi/eslint-config": "workspace:*",
 		"@mobi/typescript-config": "workspace:*",
 		"@storybook/react": "^8.6.4",
 		"@tailwindcss/postcss": "^4.0.9",

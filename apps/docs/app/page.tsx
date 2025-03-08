@@ -1,5 +1,5 @@
-import { Button } from "@mobi/ui";
 import Image, { type ImageProps } from "next/image";
+import { Button } from "@mobi/ui";
 
 import styles from "./page.module.css";
 

@@ -6,14 +6,16 @@
 		"build:ui": "turbo run build --filter=@mobi/ui",
 		"dev": "turbo run dev",
 		"dev:storybook": "turbo run dev --filter=storybook",
+		"lint": "turbo run lint",
+		"lint:fix": "turbo run lint --fix",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
 		"typecheck": "turbo run typecheck",
-		"format-and-lint": "biome check .",
-		"format-and-lint:fix": "biome check . --write",
-		"code-check": "turbo run format-and-lint format-and-lint:fix typecheck"
+		"code-check": "turbo run lint lint:fix format typecheck",
+		"clean": "turbo run clean && rm -rf node_modules"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
 		"@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+		"prettier": "^3.5.3",
 		"turbo": "^2.4.4",
 		"typescript": "5.7.3"
 	},

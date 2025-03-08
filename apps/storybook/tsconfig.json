@@ -12,6 +12,7 @@
     "noUncheckedSideEffectImports": true
   },
   "include": [
-    "src"
+    "stories",
+    "vite.config.ts"
   ]
 }

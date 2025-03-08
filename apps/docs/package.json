@@ -7,6 +7,9 @@
 		"dev": "next dev --turbopack --port 3001",
 		"build": "next build",
 		"start": "next start",
+		"lint": "eslint . --max-warnings 0",
+		"lint:fix": "eslint . --fix",
+		"clean": "rm -rf .turbo node_modules",
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
@@ -16,6 +19,7 @@
 		"react-dom": "^19.0.0"
 	},
 	"devDependencies": {
+		"@mobi/eslint-config": "workspace:*",
 		"@mobi/typescript-config": "workspace:*",
 		"@types/node": "^22",
 		"@types/react": "19.0.8",
