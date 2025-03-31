@@ -189,6 +189,9 @@ importers:
       react-dom:
         specifier: '>=19.0.0'
         version: 19.0.0(react@19.0.0)
+      tailwindcss-react-aria-components:
+        specifier: ^2.0.0
+        version: 2.0.0(tailwindcss@4.0.9)
     devDependencies:
       '@arethetypeswrong/cli':
         specifier: ^0.17.4
@@ -4211,6 +4214,11 @@ packages:
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwindcss: '*'
+
+  tailwindcss-react-aria-components@2.0.0:
+    resolution: {integrity: sha512-l8YdpXX//qx0Mz2bW3YKLjboTQxR3zLrFhlHniAIn+mTwVM1yvT0Jp7Pn3eFrqi+qtOMmcJzXaF2rsKezSr0SQ==}
+    peerDependencies:
+      tailwindcss: ^4.0.0
 
   tailwindcss@4.0.9:
     resolution: {integrity: sha512-12laZu+fv1ONDRoNR9ipTOpUD7RN9essRVkX36sjxuRUInpN7hIiHN4lBd/SIFjbISvnXzp8h/hXzmU8SQQYhw==}
@@ -9523,6 +9531,10 @@ snapshots:
   tailwind-variants@0.3.1(tailwindcss@4.0.9):
     dependencies:
       tailwind-merge: 2.5.4
+      tailwindcss: 4.0.9
+
+  tailwindcss-react-aria-components@2.0.0(tailwindcss@4.0.9):
+    dependencies:
       tailwindcss: 4.0.9
 
   tailwindcss@4.0.9: {}

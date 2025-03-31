@@ -21,7 +21,9 @@
 		"directory": "packages/ui"
 	},
 	"license": "MIT",
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"type": "module",
 	"exports": {
 		".": {
@@ -61,6 +63,7 @@
 	"dependencies": {
 		"react": ">=19.0.0",
 		"react-aria-components": "^1.6.0",
-		"react-dom": ">=19.0.0"
+		"react-dom": ">=19.0.0",
+		"tailwindcss-react-aria-components": "^2.0.0"
 	}
 }

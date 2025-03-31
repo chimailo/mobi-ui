@@ -8,11 +8,10 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const focusRing = tv({
-	base: "focused:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+	base: "focused:outline-none outline-0",
 	variants: {
 		isFocusVisible: {
-			false: "outline-0",
-			true: "outline-2",
+			true: "ring-primary-600 ring-2 ring-offset-2",
 		},
 	},
 });
